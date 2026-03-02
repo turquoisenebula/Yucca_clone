@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-image: url('Pictures/WhatsApp\ Image\ 2026-02-06\ at\ 09.29.00.jpeg'); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 350;
+}
+main{
+    
+}
+nav{
+    height: 13vh;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    /* margin-right: 10vw; */
+}
+.navnav{
+    margin-left: 7vw;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* background-color: aqua; */
+}
+.navnav svg{
+    height: 3rem;
+    width: 6rem;
+    margin-right: 1rem;
+    /* background-color: black; */
+}
+nav:hover{
+    background-color: white;
+    transition: ease 1s;
+}
+.navnav a{
+    font-size: 0.8rem;
+    padding: 5px;
+}
+.cart{
+    margin-right: 7vw;
+    display: flex;
+     align-items: center;
+    /* justify-content: center;  */
+    gap: 1rem;
+}
+.cart p{
+    font-size: 0.8rem;
+    color: #838777;
+}
+.cart svg{
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10%;
+    margin: 0px;
+    /* background-color: aqua; */
+  
+}
+.mainText{
+    height: 40vh;
+    width: 50vw;
+    font-size: 4rem;
+    margin-top: 2rem;
+    margin-left: 7vw;
+    
+}
+
+.cards{
+
+    display: flex;
+    gap: 20px;
+    /* background-color: black; */
+    margin-left: 7vw;
+    /* margin-right: 10vw; */
+}
+.card {
+  height: 40vh;
+  width: 20vw;
+  background-color: rgba(255, 255, 255, 0.42);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  transition: all ease 0.1s;
+  position: relative;
+}
+.card:hover{
+    background-color: white;
+}
+.card .headings{ 
+    height: 35px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    overflow: hidden;
+    /* background-color: white; */
+}
+.card .headings p{
+    font-size: 1.5rem;
+    transition: ease 0.2s;
+}
+.card:hover .headings p{
+    opacity: 0;
+    transform: translate(0,-70%);
+}
+.card .text{
+    font-size: 0.7rem;
+    opacity: 0;
+    /* margin: 0.rem; */
+    /* transition: ease 1s; */
+}
+.card:hover .text{
+    opacity: 1;
+    transform: translate(0,-70%);
+}
+
+.heyy{
+    height: 100vh;
+    width: 100%;
+    /* background-color: white */
+}
+
+.para-container{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 5px;
+  top: 10%;
+
+
+}
+.para-text-container{
+  gap: 20px;
+   
+  font-size: 15px;
+  position: relative;
+  height: 2vh;
+  width: 100%;
+  overflow: hidden;
+}
+.para-text-container p{
+  font-family: magnetlight;
+  font-size: 12px;
+  position: absolute;
+  left: 10px;
+  bottom: -100%;
+  transition: all ease 0.5s;
+}
+
+.card:hover .para-text-container p{
+  bottom: 0;
+}
+.line-horizontal{
+  height: 1px;
+  width: 0%;
+  background-color: #000;
+  position: absolute;
+  bottom: 20%;
+  left: 10px;
+  transition: all ease 0.5s;
+}
+.card:hover .line-horizontal{
+  width: 90%;
+}
+.button-container{
+  position: absolute;
+  display: flex;
+  bottom: 5%;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 10px;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+.button-container p{
+  font-family: magnetlight;
+  font-size: 12px;
+
+}
+.card:hover .button-container{
+  opacity: 1;
+  bottom: 7%;
+}
+.card:hover .text-container p{
+  margin-top: -20%;
+}
+.card-container{
+    display: flex;
+    margin-left: 10vh;
+    gap: 3vw;
+}
+.text-container {
+    height: 4vh;
+    width: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
